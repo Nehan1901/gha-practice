@@ -2,20 +2,20 @@ name: Hello World
 on : workflow_dispatch
 jobs:
   build:
-  runs-on: ubuntu-latest
-  steps:
-    - name:Build step
-    run: echo "A demo build"
-
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build step
+        run: echo "A demo build"
+      
   test:
-  runs-on : ubuntu-latest
-  steps:
-    -name: Test step
-    run : echo "Running test cases"
+      runs-on : ubuntu-latest
+      steps:
+        - name: Test step
+          run : echo "Running test cases"
 
   deploy:
-  runs-on : ubuntu-latest
-  steps:
-    -name : Deploy the application
-    run : echo "Deploying the application"
+    runs-on : ubuntu-latest
+    steps:
+      - name : Deploy the application
+        run : echo "Deploying the application"
   
